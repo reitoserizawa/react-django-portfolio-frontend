@@ -36,6 +36,7 @@
 .alice-carousel__prev-btn,
 .alice-carousel__next-btn {
   padding: 0px 40px !important;
+  color: black;
 }
 
 .alice_arrows {
@@ -92,6 +93,7 @@
 
 @media screen and (max-width: 568px) {
   .work__container {
+    min-height: 700px;
     display: block;
     padding-top: 100px;
     margin-left: var(--mb-1);

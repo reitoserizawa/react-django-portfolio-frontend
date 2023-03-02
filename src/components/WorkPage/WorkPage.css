@@ -113,6 +113,7 @@
   .work_page__container {
     display: block;
     padding-top: 100px;
+    min-height: 700px;
   }
   .work_page__content {
     display: block;
@@ -127,7 +128,7 @@
   }
 
   .work_page__skills .work_page__skill_list li {
-    flex: 0 0 33.333333%;
+    flex: 0 0 50%;
   }
 
   .work_page__link_list {

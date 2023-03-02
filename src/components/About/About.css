@@ -85,10 +85,6 @@
   transition: 0.5s;
 }
 
-.about__blob:hover {
-  height: 400px;
-}
-
 .about__blob__image__container {
   position: absolute !important;
   left: 50%;
@@ -103,12 +99,6 @@
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   transition: 0.5s;
-}
-
-.about__blob:hover .about__blob__image__container {
-  width: 230px;
-  height: 230px;
-  filter: none;
 }
 
 .about__blob__image__container img {
@@ -136,10 +126,6 @@
   width: 100%;
   transition: 0.5s;
   transform: translateY(140px);
-}
-
-.about__blob:hover .about__blob__details {
-  transform: translateY(0px);
 }
 
 .about__blob__details h2 {
@@ -175,11 +161,6 @@
   opacity: 0.6;
 }
 
-.about__blob__data h3:hover {
-  transform: translateY(-25%);
-  color: black;
-}
-
 .about__blob__content .actionBtn {
   display: flex;
   justify-content: center;
@@ -200,11 +181,7 @@
   -o-transition: color 1s;
   transition: color 1s;
   transition: background-color 0.5s;
-}
-
-.about__blob__content .actionBtn button:hover {
-  background-color: black;
-  color: white;
+  color: black;
 }
 
 /* small display */
@@ -224,6 +201,43 @@
     display: block;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .about__blob {
+    height: 400px;
+  }
+  .about__blob .about__blob__image__container {
+    width: 230px;
+    height: 230px;
+    filter: none;
+  }
+
+  .about__blob .about__blob__details {
+    transform: translateY(0px);
+  }
+  .about__blob__data h3 {
+    transform: translateY(-25%);
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .about__blob:hover {
+    height: 400px;
+  }
+  .about__blob:hover .about__blob__image__container {
+    width: 230px;
+    height: 230px;
+    filter: none;
+  }
+  .about__blob:hover .about__blob__details {
+    transform: translateY(0px);
+  }
+  .about__blob__data h3:hover {
+    transform: translateY(-25%);
+    color: black;
+  }
+  .about__blob__content .actionBtn button:hover {
+    background-color: black;
+    color: white;
   }
 }
 
@@ -245,7 +259,7 @@
     margin-top: 65px;
     margin-bottom: 20px;
   }
-  .about__blob:hover {
+  .about__blob {
     height: 330px;
   }
   .about__blob__image__container {
@@ -254,7 +268,7 @@
     box-shadow: 0;
   }
 
-  .about__blob:hover .about__blob__image__container {
+  .about__blob .about__blob__image__container {
     width: 180px;
     height: 180px;
     filter: none;
@@ -310,7 +324,7 @@
     margin-top: 65px;
     margin-bottom: 20px;
   }
-  .about__blob:hover {
+  .about__blob {
     height: 380px;
   }
   .about__blob__image__container {
@@ -319,7 +333,7 @@
     box-shadow: 0;
   }
 
-  .about__blob:hover .about__blob__image__container {
+  .about__blob .about__blob__image__container {
     width: 250px;
     height: 250px;
   }

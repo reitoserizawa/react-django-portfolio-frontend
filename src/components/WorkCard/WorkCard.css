@@ -28,6 +28,7 @@
 
 .work_card__name {
   margin: 0.75em 0;
+  font-size: var(--h4-font-size);
 }
 
 .work_card__stats {
