@@ -36,7 +36,6 @@
 .alice-carousel__prev-btn,
 .alice-carousel__next-btn {
   padding: 0px 40px !important;
-  color: black;
 }
 
 .alice_arrows {
@@ -56,6 +55,10 @@
 
 .alice-carousel__dots-item {
   display: none !important;
+}
+
+.work__content button {
+  color: black !important;
 }
 
 /* title */
