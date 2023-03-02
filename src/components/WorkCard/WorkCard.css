@@ -17,6 +17,7 @@
 
 .work_card__front {
   transition: 250ms;
+  z-index: 1;
 }
 
 .work_card__front .work_card__thumbnail {
@@ -91,6 +92,7 @@
   gap: 1.5em;
   transform: translateY(35%);
   color: white;
+  z-index: -1;
 }
 
 .work_card__back .work_card__links {
@@ -160,6 +162,7 @@
 
 .work_card__container:hover .work_card__front {
   transform: translateY(-30%) scale(0.8);
+  z-index: -1;
 }
 
 .work_card__container:hover .work_card__front .work_card__name {
@@ -173,6 +176,7 @@
   opacity: 1;
   transform: translateY(0);
   transition: transform 250ms ease, opacity 150ms linear;
+  z-index: 1;
 }
 
 .work_card__container:hover .work_card__back .work_card__techs {

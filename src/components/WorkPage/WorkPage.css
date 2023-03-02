@@ -129,6 +129,11 @@
 
   .work_page__skills .work_page__skill_list li {
     flex: 0 0 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: unset;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .work_page__link_list {
