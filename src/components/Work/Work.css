@@ -1,0 +1,126 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.work__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 800px;
+  height: 100vh;
+}
+
+.center {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__wrapper {
+  padding-top: 30px;
+  display: inline-block;
+  height: 500px !important;
+}
+
+.alice-carousel__dots-item.__active {
+  background: black !important;
+}
+
+.alice-carousel__dots-item {
+  background: gray !important;
+}
+
+.alice-carousel__dots {
+  margin: 0px 3px 15px !important;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  padding: 0px 40px !important;
+}
+
+.alice_arrows {
+  padding: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  position: center;
+  text-align: center;
+  border: none;
+  background: white;
+  cursor: pointer;
+  position: flex;
+}
+
+.alice-carousel__dots-item {
+  display: none !important;
+}
+
+/* title */
+
+.work__title__container {
+  display: flex;
+  justify-content: left;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work__title {
+  font-size: var(--h1-font-size);
+  padding-bottom: var(--mb-0-25);
+  width: 100%;
+}
+
+.work__title:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  margin-left: var(--mb-0-5);
+  z-index: -1;
+}
+
+.work__title span {
+  margin-right: var(--mb-0-5);
+}
+
+@media screen and (max-width: 568px) {
+  .work__container {
+    display: block;
+    padding-top: 100px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .center {
+    margin-top: 75px;
+  }
+
+  .alice-carousel__wrapper {
+    padding-top: 0px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 1024px) {
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    transform: translateY(-80%);
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 819px) {
+  .work__container {
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+  }
+}

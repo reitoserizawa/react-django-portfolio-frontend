@@ -1,0 +1,10 @@
+#loading-parent {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+
+#loading-child {
+  top: 50%;
+  position: absolute;
+}

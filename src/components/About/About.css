@@ -1,0 +1,330 @@
+.about__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 800px;
+  height: 100vh;
+}
+.about__content {
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 2em;
+}
+/* text */
+.about__data p {
+  padding-bottom: var(--mb-1);
+}
+
+/* technologies */
+
+.about__technologies {
+  align-items: center;
+}
+
+.about__technologies ul {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+  font-size: var(--small-font-size);
+}
+
+.about__technologies li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: var(--mb-0-5);
+  font-size: var(--smaller-font-size);
+}
+
+/* title */
+
+.about__title__container {
+  display: flex;
+  justify-content: left;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.about__title {
+  font-size: var(--h1-font-size);
+  padding-bottom: var(--mb-2);
+  width: 100%;
+}
+.about__title:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  margin-left: var(--mb-0-5);
+  z-index: -1;
+}
+.about__title span {
+  margin-right: var(--mb-0-5);
+}
+
+/* image */
+
+.about__blob {
+  place-self: center;
+  position: relative;
+  width: 350px;
+  /* height: 250px;
+   */
+  height: 250px;
+  background-color: gray;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px gray;
+  transition: 0.5s;
+}
+
+.about__blob:hover {
+  height: 400px;
+}
+
+.about__blob__image__container {
+  position: absolute !important;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%);
+  width: 180px;
+  background: black;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px softgray;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.about__blob:hover .about__blob__image__container {
+  width: 230px;
+  height: 230px;
+  filter: none;
+}
+
+.about__blob__image__container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__blob__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.about__blob__details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(140px);
+}
+
+.about__blob:hover .about__blob__details {
+  transform: translateY(0px);
+}
+
+.about__blob__details h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: white;
+  line-height: 1.2em;
+}
+
+.about__blob__details h2 span {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium-weight);
+  opacity: 0.5;
+}
+
+.about__blob__data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.about__blob__data h3 {
+  font-size: var(--normal-font-size);
+  color: white;
+  line-height: 1.2em;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
+
+.about__blob__data h3 span {
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.about__blob__data h3:hover {
+  transform: translateY(-25%);
+  color: black;
+}
+
+.about__blob__content .actionBtn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__blob__content .actionBtn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+  transition: background-color 0.5s;
+}
+
+.about__blob__content .actionBtn button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* small display */
+
+/* @media screen and (max-width: 400px) {
+  .about__container {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .about__container {
+    margin-top: 90px;
+  }
+} */
+@media screen and (max-width: 819px) {
+  .about__container {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+  .about__data p {
+    font-size: var(--small-font-size);
+  }
+  .about__blob {
+    height: 200px;
+    box-shadow: 0;
+    width: 250px;
+    margin-top: 65px;
+    margin-bottom: 20px;
+  }
+  .about__blob:hover {
+    height: 330px;
+  }
+  .about__blob__image__container {
+    width: 170px;
+    height: 170px;
+    box-shadow: 0;
+  }
+
+  .about__blob:hover .about__blob__image__container {
+    width: 180px;
+    height: 180px;
+    filter: none;
+  }
+  .about__blob__details {
+    transform: translateY(130px);
+  }
+
+  .about__blob__details h2 {
+    font-size: var(--h3-font-size);
+    line-height: 1em;
+  }
+
+  .about__blob__details h2 span {
+    font-size: var(--smaller-font-size);
+  }
+
+  .about__blob__data h3 {
+    font-size: var(--small-font-size);
+    line-height: 1em;
+  }
+
+  .about__blob__data h3 span {
+    font-size: var(--smaller-font-size);
+  }
+
+  .about__blob__content .actionBtn {
+    gap: 10px;
+  }
+
+  .about__blob__content .actionBtn button {
+    padding: 8px 20px;
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 819px) {
+  .about__container {
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+    display: inline-block;
+  }
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+  .about__data p {
+    font-size: var(--normal-font-size);
+  }
+
+  .about__blob {
+    height: 260px;
+    width: 400px;
+    margin-top: 65px;
+    margin-bottom: 20px;
+  }
+  .about__blob:hover {
+    height: 380px;
+  }
+  .about__blob__image__container {
+    width: 220px;
+    height: 220px;
+    box-shadow: 0;
+  }
+
+  .about__blob:hover .about__blob__image__container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about__blob__details h2 {
+    line-height: 0.8em;
+  }
+}
