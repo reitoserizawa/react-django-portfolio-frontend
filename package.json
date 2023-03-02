@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://reitoserizawa.github.io/react-django-portfolio-frontend",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
