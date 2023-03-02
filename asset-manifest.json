@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-django-portfolio-frontend/static/css/main.610d1665.css",
+    "main.css": "/react-django-portfolio-frontend/static/css/main.5a98cf94.css",
     "main.js": "/react-django-portfolio-frontend/static/js/main.1cb05556.js",
     "static/js/787.1ed0c42c.chunk.js": "/react-django-portfolio-frontend/static/js/787.1ed0c42c.chunk.js",
     "static/media/about__blob.jpg": "/react-django-portfolio-frontend/static/media/about__blob.4e203409309be3577c91.jpg",
@@ -8,12 +8,12 @@
     "static/media/Reito.Resume.SoftwareEngineer111022 (4).pdf": "/react-django-portfolio-frontend/static/media/Reito.Resume.SoftwareEngineer111022 (4).d95ad500a294230c881b.pdf",
     "static/media/header-logo.png": "/react-django-portfolio-frontend/static/media/header-logo.4614d6bf18ce4bfc5e4e.png",
     "index.html": "/react-django-portfolio-frontend/index.html",
-    "main.610d1665.css.map": "/react-django-portfolio-frontend/static/css/main.610d1665.css.map",
+    "main.5a98cf94.css.map": "/react-django-portfolio-frontend/static/css/main.5a98cf94.css.map",
     "main.1cb05556.js.map": "/react-django-portfolio-frontend/static/js/main.1cb05556.js.map",
     "787.1ed0c42c.chunk.js.map": "/react-django-portfolio-frontend/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.610d1665.css",
+    "static/css/main.5a98cf94.css",
     "static/js/main.1cb05556.js"
   ]
 }
