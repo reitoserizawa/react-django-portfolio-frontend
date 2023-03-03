@@ -99,8 +99,6 @@
     min-height: 700px;
     display: block;
     padding-top: 100px;
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
   }
 
   .center {
@@ -123,7 +121,14 @@
   }
 }
 
-@media screen and (min-width: 569px) and (max-width: 819px) {
+@media screen and (max-width: 500px) {
+  .work__container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 819px) {
   .work__container {
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);

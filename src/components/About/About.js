@@ -10,7 +10,7 @@ function About() {
     <>
       {aboutLoading ? (
         <Loading
-          title="About"
+          title="About me"
           setLoading={setAboutLoading}
           loading={aboutLoading}
         />
@@ -19,7 +19,7 @@ function About() {
           <div className="about__container container grid">
             <div className="about__title__container">
               <h1 className="about__title">
-                <span aria-hidden="true">01</span>About
+                <span aria-hidden="true">01</span>About me
               </h1>
             </div>
             <div className="about__content grid">

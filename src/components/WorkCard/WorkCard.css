@@ -100,6 +100,14 @@
   column-rule: 1px solid white;
 }
 
+.work_card__back {
+  visibility: hidden;
+}
+
+.work_card__container:hover .work_card__back {
+  visibility: visible;
+}
+
 .work_card__back .work_card__link {
   font-size: 1.125rem;
   text-align: center;
