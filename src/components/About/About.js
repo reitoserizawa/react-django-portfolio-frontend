@@ -34,7 +34,7 @@ function About() {
                 </p>
                 <p>
                   When I immigrated to the U.S. from Japan in December 2021, I
-                  thought it is a great chance to follow my dream as a software
+                  thought it was a great chance to follow my dream as a software
                   engineer and I decided to go to Flatiron School in NYC in
                   April 2022.
                 </p>
