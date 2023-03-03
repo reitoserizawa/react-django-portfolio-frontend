@@ -6,6 +6,7 @@ import Loading from "../Loading/Loading";
 
 function Home() {
   const [loading, setLoading] = useState(true);
+
   return (
     <>
       {loading ? (

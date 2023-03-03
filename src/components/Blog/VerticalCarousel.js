@@ -11,7 +11,7 @@ function VerticalCarousel({ articles, author }) {
       if (pause === false) {
         moveSlide(1);
       }
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   });
 

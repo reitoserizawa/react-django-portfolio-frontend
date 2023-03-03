@@ -61,7 +61,7 @@
   @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
       /* changes the color of navbar background  */
-      background: hsl(0 0% 0%/0.1);
+      background: hsl(0 2% 90%/0.6);
       backdrop-filter: blur(1rem);
     }
   }

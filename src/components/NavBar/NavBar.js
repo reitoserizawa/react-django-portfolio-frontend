@@ -46,7 +46,7 @@ function NavBar() {
             </li>
             <li className="active">
               <Link to="/about">
-                <span aria-hidden="true">01</span>About
+                <span aria-hidden="true">01</span>About me
               </Link>
             </li>
             <li className="active">

@@ -28,9 +28,9 @@ function About() {
                   Hello, world! I am Reito Serizawa. Prior to pursuing a career
                   as a software engineer, I was a sales and marketing
                   professional, mainly working on B2B partnerships. I created my
-                  own homepage for the first time when I was in the middle
-                  school and I fell in love with coding. Though, my primary
-                  focus at the time was languages and cultures.
+                  own homepage for the first time when I was in middle school
+                  and I fell in love with coding, though, my primary focus at
+                  the time was languages and cultures.
                 </p>
                 <p>
                   When I immigrated to the U.S. from Japan in December 2021, I

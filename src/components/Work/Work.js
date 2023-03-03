@@ -58,7 +58,7 @@ function Work() {
                 responsive={responsive}
                 controlsStrategy="responsive"
                 autoPlay={!modal}
-                autoPlayInterval={1500}
+                autoPlayInterval={3000}
                 infinite={true}
                 keyboardNavigation={true}
                 renderPrevButton={() => {

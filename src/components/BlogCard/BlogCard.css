@@ -258,6 +258,10 @@ ion-icon {
     z-index: -1;
   }
 
+  .share-option i {
+    font-size: 20px;
+  }
+
   .share-option.active {
     --translateY: 0;
   }
