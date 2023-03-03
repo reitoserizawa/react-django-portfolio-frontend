@@ -16,7 +16,10 @@
   margin: 0 auto;
   width: 10rem;
   justify-content: space-between;
-  z-index: 1;
+}
+
+.blog__nav_bttns button {
+  z-index: 10;
 }
 
 .blog__nav_bttn {
