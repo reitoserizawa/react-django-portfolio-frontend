@@ -24,6 +24,7 @@ function Work() {
           setModal={setModal}
           modal={modal}
           project={project}
+          maxIndex={projects.length}
         />
       </div>
     );

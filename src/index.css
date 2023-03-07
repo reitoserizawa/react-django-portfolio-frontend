@@ -60,6 +60,10 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  font-family: inherit;
+}
+
 h1,
 h2,
 h3,

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./BlogCard.css";
 import { Spring } from "react-spring/renderprops";
 
@@ -91,9 +92,11 @@ function BlogCard({
             </div>
 
             <div className="article-content">
-              <a href={data.link}>
+              {/* <a href={data.link}> */}
+              <Link to={`/blog/${data.title}`} state={{ from: data }}>
                 <h3 className="article-title">{data.title}</h3>
-              </a>
+              </Link>
+              {/* </a> */}
               <p className="article-text">
                 {convertHTMLtoText(data.description)}...
               </p>

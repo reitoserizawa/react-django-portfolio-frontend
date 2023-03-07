@@ -45,28 +45,33 @@ function NavBar() {
               </Link>
             </li>
             <li className="active">
-              <Link to="/about">
+              <Link to="/about_me">
                 <span aria-hidden="true">01</span>About me
               </Link>
             </li>
             <li className="active">
+              <Link to="/skills">
+                <span aria-hidden="true">02</span>Skills
+              </Link>
+            </li>
+            <li className="active">
               <Link to="/work">
-                <span aria-hidden="true">02</span>Work
+                <span aria-hidden="true">03</span>Work
               </Link>
             </li>
             <li className="active">
               <Link to="/blog">
-                <span aria-hidden="true">03</span>Blog
+                <span aria-hidden="true">04</span>Blog
               </Link>
             </li>
             <li className="active">
               <Link to="/contact">
-                <span aria-hidden="true">04</span>Contact
+                <span aria-hidden="true">05</span>Contact
               </Link>
             </li>
             <li className="active">
               <a href={pdf} target="_blank" rel="noreferrer">
-                <span aria-hidden="true">05</span>Resume
+                <span aria-hidden="true">06</span>Resume
               </a>
             </li>
           </ul>

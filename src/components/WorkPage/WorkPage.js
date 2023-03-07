@@ -1,16 +1,27 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./WorkPage.css";
 
 function WorkPage() {
   const [project, setProject] = useState([]);
   const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://reitos.pythonanywhere.com/api/projects/${params.id}`)
       .then((r) => r.json())
       .then((data) => setProject(data));
   }, [params]);
+
+  const handlePrev = () => {
+    navigate(`/work/${parseInt(params.id) - 1}`);
+  };
+  const handleNext = () => {
+    navigate(`/work/${parseInt(params.id) + 1}`);
+  };
+  const handleBackToWork = () => {
+    navigate(`/work`);
+  };
 
   const convert_content = (data) => {
     if (!data) return;
@@ -69,6 +80,35 @@ function WorkPage() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="work_page__button_container">
+          {project.id === 1 ? (
+            <div className="item1">
+              <p></p>
+            </div>
+          ) : (
+            <div className="item1">
+              <button className="go_back_bttn" onClick={handlePrev}>
+                <i className="fa-solid fa-arrow-left"></i> Prev. Project
+              </button>
+            </div>
+          )}
+          <div className="item2">
+            <button className="go_back_bttn item2" onClick={handleBackToWork}>
+              <i className="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
+          {project.id === 5 ? (
+            <div className="item3">
+              <p></p>
+            </div>
+          ) : (
+            <div className="item3">
+              <button className="go_back_bttn item3" onClick={handleNext}>
+                Next Project <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
