@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../images/header-logo.png";
-import pdf from "../../pdf/Reito.Resume.SoftwareEngineer111022 (4).pdf";
+import pdf from "../../pdf/Reito.Resume.SoftwareEngineer.pdf";
 
 function NavBar() {
   const [visibility, setVisibility] = useState(false);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Contact.css";
 import Loading from "../Loading/Loading";
-import pdf from "../../pdf/03072023.Reito.Resume.pdf";
+import pdf from "../../pdf/Reito.Resume.SoftwareEngineer.pdf";
 
 function Contact() {
   const [contactLoading, setContactLoading] = useState(true);
